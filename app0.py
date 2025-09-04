@@ -79,7 +79,7 @@ if "agent_executor" not in st.session_state:
     )
 
 # --- UI Rendering ---
-st.title("🤖 COdeXR: AI Agent with Web Search")
+st.title("🤖 COdeXR: AI Agent for AR/VR Dev")
 
 chat_container = st.container()
 with chat_container:

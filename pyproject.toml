@@ -1,29 +1,33 @@
-[project]
+[tool.poetry]
 name = "codexr"
 version = "0.1.0"
 description = "Add your description here"
+authors = ["Your Name <you@example.com>"]
 readme = "README.md"
-package-mode = false 
-requires-python = ">=3.10,<3.12"
+package-mode = false
 
-dependencies = [
-    "audio-recorder-streamlit>=0.0.10",
-    "av>=14.4.0",
-    "google-generativeai>=0.8.5",
-    "groq>=0.31.0",
-    "httpx>=0.28.1",
-    "langchain>=0.3.27",
-    "langchain-community>=0.3.29",
-    "langchain-groq>=0.3.7",
-    "langchainhub>=0.1.21",
-    "openai>=1.102.0",
-    "pydantic>=2.11.7",
-    "pydub>=0.25.1",
-    "python-dotenv>=1.1.1",
-    "requests>=2.32.5",
-    "soundfile>=0.13.1",
-    "streamlit>=1.49.1",
-    "streamlit-mic-recorder>=0.0.8",
-    "streamlit-webrtc>=0.63.4",
-    "tavily-python>=0.7.11",
-]
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+audio-recorder-streamlit = ">=0.0.10"
+av = ">=14.4.0"
+google-generativeai = ">=0.8.5"
+groq = ">=0.31.0"
+httpx = ">=0.28.1"
+langchain = ">=0.3.27"
+langchain-community = ">=0.3.29"
+langchain-groq = ">=0.3.7"
+langchainhub = ">=0.1.21"
+openai = ">=1.102.0"
+pydantic = ">=2.11.7"
+pydub = ">=0.25.1"
+python-dotenv = ">=1.1.1"
+requests = ">=2.32.5"
+soundfile = ">=0.13.1"
+streamlit = ">=1.49.1"
+streamlit-mic-recorder = ">=0.0.8"
+streamlit-webrtc = ">=0.63.4"
+tavily-python = ">=0.7.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
